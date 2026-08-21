@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahsan Rizvi — AI Engineer</title>
+<meta name="description" content="AI Engineer in Dhaka building computer vision, security ML and LLM systems end to end.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<div class="shell">
+
+  <!-- LEFT RAIL -->
+  <aside class="rail">
+    <header class="rail-head">
+      <p class="eyebrow">AI Engineer &middot; Dhaka, BD</p>
+      <h1 class="wordmark">Ahsan<br>Rizvi</h1>
+      <p class="rail-bio">
+        I build machine learning systems that survive contact with production —
+        computer vision, security analytics and LLM applications, shipped end to end.
+        Currently training as an AI Engineer at BJIT Ltd.
+      </p>
+    </header>
+
+    <nav class="rail-nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#background">Background</a>
+    </nav>
+
+    <ul class="rail-contact">
+      <li><a href="mailto:ahsanrizvi1961@gmail.com">ahsanrizvi1961@gmail.com</a></li>
+      <li><a href="https://github.com/ahsanrizvi99" target="_blank" rel="noopener">github.com/ahsanrizvi99</a></li>
+      <li><a href="https://linkedin.com/in/ahsanrizviii/" target="_blank" rel="noopener">linkedin.com/in/ahsanrizviii</a></li>
+      <li><a href="tel:+8801715403614">+880 1715 403614</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN COLUMN -->
+  <main class="main">
+
+    <!-- WORK -->
+    <section class="block" id="work">
+      <div class="block-head">
+        <h2 class="block-title">Selected work</h2>
+        <p class="block-note">Every project below is measured. The number in the margin is the one that mattered.</p>
+      </div>
+
+      <article class="run reveal">
+        <div class="metric">
+          <span class="metric-value">&lt;4s</span>
+          <span class="metric-label">inference<br>per try-on</span>
+        </div>
+        <div class="run-body">
+          <h3 class="run-title">AI-Powered Virtual Fitting Room</h3>
+          <p class="run-kind">Generative AI virtual try-on</p>
+          <p class="run-text">
+            A GAN-based image synthesis model (VITON-HD) wired to a FastAPI backend, serving photorealistic
+            try-on results to a lightweight React frontend. The frontend never touches the GPU: a proxy-tunnel
+            architecture hands inference off to a remote Tesla T4, so the whole thing runs in an ordinary browser
+            instead of demanding local compute.
+          </p>
+          <ul class="tags">
+            <li>PyTorch</li><li>GANs</li><li>VITON-HD</li><li>FastAPI</li><li>React</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="run reveal">
+        <div class="metric">
+          <span class="metric-value">0.049<span class="metric-unit">ms</span></span>
+          <span class="metric-label">prediction<br>latency</span>
+        </div>
+        <div class="run-body">
+          <h3 class="run-title">Real-Time Web Attack Detection</h3>
+          <p class="run-kind">Security analytics</p>
+          <p class="run-text">
+            An intrusion detection system that reads network flow data from PCAP captures and flags SQL injection
+            and XSS attempts. I benchmarked several models and chose XGBoost specifically because sub-millisecond
+            prediction adds no measurable drag to web traffic. SHAP sits on top of it, so every alert arrives with
+            the features that triggered it rather than a bare verdict.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>XGBoost</li><li>SHAP</li><li>Pandas</li><li>Wireshark</li><li>Docker</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="run reveal">
+        <div class="metric">
+          <span class="metric-value">95.06<span class="metric-unit">%</span></span>
+          <span class="metric-label">accuracy on<br>423K params</span>
+        </div>
+        <div class="run-body">
+          <h3 class="run-title">ECG Heartbeat Classification</h3>
+          <p class="run-kind">Deep learning on medical signals</p>
+          <p class="run-text">
+            A custom CNN that beat ResNet50 transfer learning on ECG data while carrying 423K parameters against
+            23M+. The interesting result was not the accuracy on its own but the ratio: a model small enough to
+            deploy cheaply, trained from scratch on the actual signal shape rather than borrowed image features.
+          </p>
+          <ul class="tags">
+            <li>TensorFlow</li><li>Keras</li><li>OpenCV</li><li>Django</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="run reveal">
+        <div class="metric">
+          <span class="metric-value">1,000<span class="metric-unit">+</span></span>
+          <span class="metric-label">products<br>scraped daily</span>
+        </div>
+        <div class="run-body">
+          <h3 class="run-title">Budget Bazaar</h3>
+          <p class="run-kind">Price comparison for Dhaka grocery shoppers</p>
+          <p class="run-text">
+            A scraping pipeline that pulls daily pricing from Chaldal, Othoba and SobjiBazaar, then normalises the
+            mess — inconsistent units, mismatched product names — with regex cleaning on a cron schedule. The
+            payoff is a search that ranks by lowest unit price, which doubles as a live read on food inflation.
+          </p>
+          <ul class="tags">
+            <li>Django</li><li>Selenium</li><li>BeautifulSoup</li><li>Cron</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="block" id="experience">
+      <div class="block-head">
+        <h2 class="block-title">Experience</h2>
+      </div>
+
+      <article class="post reveal">
+        <p class="post-when">Jul 2026 &mdash; Present</p>
+        <div class="post-body">
+          <h3 class="post-role">AI Engineer Trainee</h3>
+          <p class="post-org">BJIT Ltd. &middot; Dhaka</p>
+          <p class="run-text">
+            Selected for BJIT Academy's AI Engineering program: Python, machine learning, deep learning, LLMs,
+            MLOps and LLMOps, AWS, Git and Agile practice. Hands-on work in PyTorch, Hugging Face, FastAPI and
+            Docker, building toward a client-oriented capstone.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal">
+        <p class="post-when">May &mdash; Jun 2026</p>
+        <div class="post-body">
+          <h3 class="post-role">IT Intern</h3>
+          <p class="post-org">City Bank PLC &middot; Dhaka</p>
+          <p class="run-text">
+            Built a full-stack Django IT training portal with Active Directory authentication, dynamic PDF
+            reporting and bulk data processing. Also worked with the AI team on image segmentation and labelling,
+            and with the Data Science team on internal data initiatives.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal">
+        <p class="post-when">2019 &mdash; Present</p>
+        <div class="post-body">
+          <h3 class="post-role">Private Tutor</h3>
+          <p class="post-org">O Level mathematics and sciences</p>
+          <p class="run-text">
+            Seven years and 10+ students, taught with an emphasis on structured problem-solving rather than
+            memorised procedure. Most of these have been long-term relationships rather than exam-season sprints.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- STACK -->
+    <section class="block" id="stack">
+      <div class="block-head">
+        <h2 class="block-title">Stack</h2>
+      </div>
+
+      <dl class="stack reveal">
+        <div class="stack-row">
+          <dt>Languages</dt>
+          <dd>Python &middot; C &middot; Java &middot; SQL</dd>
+        </div>
+        <div class="stack-row">
+          <dt>ML &amp; AI</dt>
+          <dd>PyTorch &middot; TensorFlow &middot; Scikit-learn &middot; Hugging Face</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Web &amp; backend</dt>
+          <dd>Django &middot; FastAPI &middot; React &middot; Bootstrap &middot; HTML &middot; CSS</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Data &amp; automation</dt>
+          <dd>Pandas &middot; OpenCV &middot; Selenium &middot; BeautifulSoup &middot; Matplotlib &middot; n8n</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Tooling</dt>
+          <dd>Git &middot; Docker &middot; Jenkins &middot; AWS (basics)</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Languages spoken</dt>
+          <dd>English &middot; Bengali</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section class="block" id="background">
+      <div class="block-head">
+        <h2 class="block-title">Background</h2>
+      </div>
+
+      <article class="post reveal">
+        <p class="post-when">2021 &mdash; 2025</p>
+        <div class="post-body">
+          <h3 class="post-role">BSc in Computer Science</h3>
+          <p class="post-org">North South University &middot; Dhaka</p>
+          <p class="run-text">
+            Graduated <em>cum laude</em> with a 3.51/4.00 GPA, on a 50% merit scholarship awarded for academic
+            standing.
+          </p>
+        </div>
+      </article>
+
+      <article class="post reveal">
+        <p class="post-when">2017 &mdash; 2019</p>
+        <div class="post-body">
+          <h3 class="post-role">O Levels and A Levels</h3>
+          <p class="post-org">International Hope School Bangladesh &middot; Dhaka</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="foot">
+      <p class="foot-line">Open to AI engineering roles and collaborations.</p>
+      <a class="foot-mail" href="mailto:ahsanrizvi1961@gmail.com">ahsanrizvi1961@gmail.com</a>
+      <!-- Bump this number, commit, and watch the pipeline produce a new image. -->
+      <p class="build">build&nbsp;v1.0</p>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  // Scroll reveal, skipped entirely when the visitor prefers reduced motion.
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var items = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>

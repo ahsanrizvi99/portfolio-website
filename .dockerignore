@@ -1,0 +1,10 @@
+.git
+.gitignore
+.github
+Jenkinsfile
+README.md
+*.md
+.vagrant
+.DS_Store
+Thumbs.db
+node_modules
