@@ -14,28 +14,36 @@
 
 <a class="skip" href="#work">Skip to work</a>
 
+<!-- reading progress -->
+<div class="progress" aria-hidden="true"><span class="progress-bar"></span></div>
+
 <div class="shell">
 
   <!-- LEFT RAIL -->
   <aside class="rail">
     <header class="rail-head">
-      <p class="eyebrow">AI Engineer &middot; Dhaka, BD</p>
-      <h1 class="wordmark">Ahsan<br>Rizvi</h1>
-      <p class="rail-bio">
+      <p class="eyebrow load" style="--d:0ms">AI Engineer &middot; Dhaka, BD</p>
+
+      <h1 class="wordmark">
+        <span class="line"><span style="--d:80ms">Ahsan</span></span>
+        <span class="line"><span style="--d:180ms">Rizvi</span></span>
+      </h1>
+
+      <p class="rail-bio load" style="--d:320ms">
         I build machine learning systems that survive contact with production —
         computer vision, security analytics and LLM applications, shipped end to end.
         Currently training as an AI Engineer at BJIT Ltd.
       </p>
     </header>
 
-    <nav class="rail-nav" aria-label="Sections">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#stack">Stack</a>
-      <a href="#background">Background</a>
+    <nav class="rail-nav load" aria-label="Sections" style="--d:400ms">
+      <a href="#work"><span>Work</span></a>
+      <a href="#experience"><span>Experience</span></a>
+      <a href="#stack"><span>Stack</span></a>
+      <a href="#background"><span>Background</span></a>
     </nav>
 
-    <ul class="rail-contact">
+    <ul class="rail-contact load" style="--d:460ms">
       <li><a href="mailto:ahsanrizvi1961@gmail.com">ahsanrizvi1961@gmail.com</a></li>
       <li><a href="https://github.com/ahsanrizvi99" target="_blank" rel="noopener">github.com/ahsanrizvi99</a></li>
       <li><a href="https://linkedin.com/in/ahsanrizviii/" target="_blank" rel="noopener">linkedin.com/in/ahsanrizviii</a></li>
@@ -49,13 +57,18 @@
     <!-- WORK -->
     <section class="block" id="work">
       <div class="block-head">
-        <h2 class="block-title">Selected work</h2>
-        <p class="block-note">Every project below is measured. The number in the margin is the one that mattered.</p>
+        <h2 class="block-title reveal">Selected work</h2>
+        <p class="block-note reveal">Every project below is measured. The number in the margin is the one that mattered.</p>
       </div>
+
+      <!-- the spine fills as you read down the results -->
+      <div class="spine" aria-hidden="true"><span class="spine-fill"></span></div>
 
       <article class="run reveal">
         <div class="metric">
-          <span class="metric-value">&lt;4s</span>
+          <span class="metric-value" data-value="4" data-decimals="0" data-prefix="&lt;">
+            <span class="num">0</span><span class="metric-unit">s</span>
+          </span>
           <span class="metric-label">inference<br>per try-on</span>
         </div>
         <div class="run-body">
@@ -75,7 +88,9 @@
 
       <article class="run reveal">
         <div class="metric">
-          <span class="metric-value">0.049<span class="metric-unit">ms</span></span>
+          <span class="metric-value" data-value="0.049" data-decimals="3">
+            <span class="num">0.000</span><span class="metric-unit">ms</span>
+          </span>
           <span class="metric-label">prediction<br>latency</span>
         </div>
         <div class="run-body">
@@ -95,7 +110,9 @@
 
       <article class="run reveal">
         <div class="metric">
-          <span class="metric-value">95.06<span class="metric-unit">%</span></span>
+          <span class="metric-value" data-value="95.06" data-decimals="2">
+            <span class="num">0.00</span><span class="metric-unit">%</span>
+          </span>
           <span class="metric-label">accuracy on<br>423K params</span>
         </div>
         <div class="run-body">
@@ -114,7 +131,9 @@
 
       <article class="run reveal">
         <div class="metric">
-          <span class="metric-value">1,000<span class="metric-unit">+</span></span>
+          <span class="metric-value" data-value="1000" data-decimals="0">
+            <span class="num">0</span><span class="metric-unit">+</span>
+          </span>
           <span class="metric-label">products<br>scraped daily</span>
         </div>
         <div class="run-body">
@@ -135,7 +154,7 @@
     <!-- EXPERIENCE -->
     <section class="block" id="experience">
       <div class="block-head">
-        <h2 class="block-title">Experience</h2>
+        <h2 class="block-title reveal">Experience</h2>
       </div>
 
       <article class="post reveal">
@@ -180,31 +199,31 @@
     <!-- STACK -->
     <section class="block" id="stack">
       <div class="block-head">
-        <h2 class="block-title">Stack</h2>
+        <h2 class="block-title reveal">Stack</h2>
       </div>
 
-      <dl class="stack reveal">
-        <div class="stack-row">
+      <dl class="stack">
+        <div class="stack-row reveal">
           <dt>Languages</dt>
           <dd>Python &middot; C &middot; Java &middot; SQL</dd>
         </div>
-        <div class="stack-row">
+        <div class="stack-row reveal">
           <dt>ML &amp; AI</dt>
           <dd>PyTorch &middot; TensorFlow &middot; Scikit-learn &middot; Hugging Face</dd>
         </div>
-        <div class="stack-row">
+        <div class="stack-row reveal">
           <dt>Web &amp; backend</dt>
           <dd>Django &middot; FastAPI &middot; React &middot; Bootstrap &middot; HTML &middot; CSS</dd>
         </div>
-        <div class="stack-row">
+        <div class="stack-row reveal">
           <dt>Data &amp; automation</dt>
           <dd>Pandas &middot; OpenCV &middot; Selenium &middot; BeautifulSoup &middot; Matplotlib &middot; n8n</dd>
         </div>
-        <div class="stack-row">
+        <div class="stack-row reveal">
           <dt>Tooling</dt>
           <dd>Git &middot; Docker &middot; Jenkins &middot; AWS (basics)</dd>
         </div>
-        <div class="stack-row">
+        <div class="stack-row reveal">
           <dt>Languages spoken</dt>
           <dd>English &middot; Bengali</dd>
         </div>
@@ -214,7 +233,7 @@
     <!-- BACKGROUND -->
     <section class="block" id="background">
       <div class="block-head">
-        <h2 class="block-title">Background</h2>
+        <h2 class="block-title reveal">Background</h2>
       </div>
 
       <article class="post reveal">
@@ -239,35 +258,132 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="foot">
+    <footer class="foot reveal">
       <p class="foot-line">Open to AI engineering roles and collaborations.</p>
-      <a class="foot-mail" href="mailto:ahsanrizvi1961@gmail.com">ahsanrizvi1961@gmail.com</a>
+      <a class="foot-mail" href="mailto:ahsanrizvi1961@gmail.com">
+        <span class="foot-mail-text">ahsanrizvi1961@gmail.com</span>
+      </a>
       <!-- Bump this number, commit, and watch the pipeline produce a new image. -->
-      <p class="build">build&nbsp;v1.0</p>
+      <p class="build">build&nbsp;v2.0</p>
     </footer>
 
   </main>
 </div>
 
 <script>
-  // Scroll reveal, skipped entirely when the visitor prefers reduced motion.
-  (function () {
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var items = document.querySelectorAll('.reveal');
-    if (reduce || !('IntersectionObserver' in window)) {
-      items.forEach(function (el) { el.classList.add('is-in'); });
+(function () {
+  'use strict';
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (reduce) {
+    document.documentElement.classList.add('no-motion');
+  } else {
+    document.documentElement.classList.add('motion');
+  }
+
+  /* ---------------------------------------------------- reading progress */
+  var bar = document.querySelector('.progress-bar');
+  var spine = document.querySelector('.spine-fill');
+  var work = document.getElementById('work');
+  var ticking = false;
+
+  function onScroll() {
+    var doc = document.documentElement;
+    var max = doc.scrollHeight - window.innerHeight;
+    var p = max > 0 ? window.scrollY / max : 0;
+    if (bar) bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+
+    if (spine && work) {
+      var r = work.getBoundingClientRect();
+      var vh = window.innerHeight;
+      var travelled = (vh * 0.75) - r.top;
+      var sp = Math.max(0, Math.min(1, travelled / r.height));
+      spine.style.transform = 'scaleY(' + sp.toFixed(4) + ')';
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) { window.requestAnimationFrame(onScroll); ticking = true; }
+  }, { passive: true });
+  onScroll();
+
+  /* --------------------------------------------------------- counters */
+  function format(v, dec) {
+    return v.toLocaleString('en-US', {
+      minimumFractionDigits: dec,
+      maximumFractionDigits: dec
+    });
+  }
+
+  function settle(el) {
+    var target = parseFloat(el.dataset.value);
+    var dec = parseInt(el.dataset.decimals || '0', 10);
+    var prefix = el.dataset.prefix || '';
+    var num = el.querySelector('.num');
+    if (!num) return;
+
+    if (reduce) {
+      num.textContent = prefix + format(target, dec);
       return;
     }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    items.forEach(function (el) { io.observe(el); });
-  })();
+
+    var dur = 1200;
+    var t0 = null;
+
+    function frame(now) {
+      if (t0 === null) t0 = now;
+      var t = Math.min((now - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - t, 4);       // fast out, long settle
+      num.textContent = prefix + format(target * eased, dec);
+      if (t < 1) window.requestAnimationFrame(frame);
+      else num.textContent = prefix + format(target, dec);
+    }
+    window.requestAnimationFrame(frame);
+  }
+
+  /* ------------------------------------------------------ scroll reveal */
+  var items = document.querySelectorAll('.reveal');
+  var metrics = document.querySelectorAll('.metric-value');
+
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-in'); });
+    metrics.forEach(settle);
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-in');
+      var m = entry.target.querySelector('.metric-value');
+      if (m) settle(m);
+      io.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
+
+  items.forEach(function (el) { io.observe(el); });
+
+  /* --------------------------------------------- active section in nav */
+  var links = {};
+  document.querySelectorAll('.rail-nav a').forEach(function (a) {
+    links[a.getAttribute('href').slice(1)] = a;
+  });
+
+  var spy = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var a = links[entry.target.id];
+      if (!a) return;
+      if (entry.isIntersecting) {
+        Object.keys(links).forEach(function (k) { links[k].classList.remove('is-active'); });
+        a.classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-25% 0px -60% 0px' });
+
+  document.querySelectorAll('.block').forEach(function (s) { spy.observe(s); });
+})();
 </script>
 
 </body>
